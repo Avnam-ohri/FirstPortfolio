@@ -20,7 +20,7 @@
     />
     <link rel="stylesheet" href="./navstyele.css" />
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="style2.css" />
+    <!-- <link rel="stylesheet" href="style2.css" /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -195,20 +195,20 @@
       <div class="section" id="section3">
         <h3 id="myProjects">My Projects</h3>
         <span class="whole">
-          <div class="project"></div>
-          <div class="project"></div>
-          <div class="project"></div>
+          <a class="one" href="http://" target="_blank" rel="noopener noreferrer"><div class="project" id="pro_one"></div></a>
+          <a class="one" href="http://" target="_blank" rel="noopener noreferrer"><div class="project" id="pro_two"></div></a>
+          <a  class="one" href="http://" target="_blank" rel="noopener noreferrer"><div class="project" id="pro_three"></div></a>
         </span>
       </div>
 
       <div class="section" id="section4">
           <div class="connect">
         <h1 id="contactMe">Get in touch</h1>
-        <form  onsubmit="sendEmail(); reset(); return false">
+        <form  method="post" action="form.php" >
             <input type="text" name="Name" placeholder="Full Name" required>
             <input type="email" id="email" name="Email" placeholder="Email" required>
             <textarea name="Message" id="message" placeholder="Write a Message" cols="30" rows="10"></textarea>
-            <button type="submit" class="submitbtn">Send</button>
+            <button name="submit" type="submit" class="submitbtn">Send</button>
         </form>
       </div>
     </div>
@@ -228,20 +228,5 @@
       });
     </script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function sendEmail(){
-            Email.send({
-    Host : "smtp.gmail.com",
-    Username : "avnamohri4awesome@gmail.com",
-    Password : "StarneyBinson#464",
-    To : 'avnamohri@gmail.com',
-    From : document.getElementById("email").value,
-    Subject : "New email from portfolio",
-    Body : document.getElementById("message").value
-}).then(
-  message => alert(message)
-);
-        }
-    </script>
   </body>
 </html>

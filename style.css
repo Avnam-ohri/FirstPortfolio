@@ -171,30 +171,20 @@ html {
 }
 #section1 {
   background-color: black;
-  border-bottom-left-radius: 20%;
-  border-bottom-right-radius: 20%;
+
 }
 #section2 {
-  border-top-left-radius: 20%;
-  border-top-right-radius: 20%;
-  border-bottom-left-radius: 20%;
-  border-bottom-right-radius: 20%;
+
   background-color: rgb(224, 216, 216);
   /* background-color: rgb(175, 175, 201); */
 }
 #section3 {
-  border-top-left-radius: 20%;
-  border-top-right-radius: 20%;
-  border-bottom-left-radius: 20%;
-  border-bottom-right-radius: 20%;
+
   background-color: rgb(90, 5, 5);
 }
 
 #section4 {
-  border-top-left-radius: 20%;
-  border-top-right-radius: 20%;
-  border-bottom-left-radius: 20%;
-  border-bottom-right-radius: 20%;
+
   background-color: black;
 }
 
@@ -247,21 +237,26 @@ html {
 }
 .whole {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: stretch;
+  /* flex-direction: row; */
+  /* flex-wrap: wrap; */
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid lime; */
+
 }
+
+
 .project {
   display: block;
-  /* border: 2px solid lime; */
+  /* border: 2px solid yellow; */
   height: 250px;
   top: 5vh;
-  margin-left: 15px;
+  margin-left: 85px;
   width: 250px;
-  position: relative;
+  position:relative;
   border: 2px solid pink;
   background: black;
-  left: 25%;
+  left: 0%;
   transition: 200ms;
 }
 
@@ -273,7 +268,7 @@ html {
   width: 280px;
   position: relative;
   border: 2px solid lightblue;
-  left: 25%;
+  left: 10%;
   background-color: #101010;
   /* z-index: 1; */
 }
@@ -392,4 +387,7 @@ textarea {
 }
 .link i:hover {
   font-size: 30px;
+}
+#pro_one{
+  background-image :url("Particles.png")
 }
