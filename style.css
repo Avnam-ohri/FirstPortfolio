@@ -175,12 +175,12 @@ html {
 }
 #section2 {
 
-  background-color: rgb(224, 216, 216);
+  background-color: #007FFF;
   /* background-color: rgb(175, 175, 201); */
 }
 #section3 {
 
-  background-color: rgb(90, 5, 5);
+  background-color: #333333;
 }
 
 #section4 {
@@ -389,5 +389,26 @@ textarea {
   font-size: 30px;
 }
 #pro_one{
-  background-image :url("Particles.png")
+  background-image :url("Particles.png");
+  
+}
+#pro_two{
+  background-image :url("images/python\ script.jpg")
+
+}
+
+#pro_three{
+  background-image :url("images/crypto.jpg")
+
+}
+
+.pro_name{
+  color:gainsboro;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+  position: relative;
+  top: 110%;
+  left: 10%;
+  font-size: 30px;
+  transition: 200ms;
+
 }
